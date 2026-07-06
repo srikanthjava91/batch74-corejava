@@ -6,7 +6,19 @@ public class TestVariablesDemo1 {
 
 	public static void main(String[] args) {
 
-		var i = 10;
+		TestVariablesDemo1 t1 = new TestVariablesDemo1();
+		System.out.println(t1);
+		int i = 0x27716f4;
+		System.out.println(i);
+		
+		System.out.println(t1.hashCode());
+
+		TestVariablesDemo1 t2 = new TestVariablesDemo1();
+		System.out.println(t2.hashCode());
+
+		System.out.println(t1 == t2);
+
+//		var i = 10;
 
 		var s1 = "Jitendra"; // --> SCP --> String Constant Pool --> Heap --> 1 object
 		var s2 = "Jitendra"; // --> 0 objects
@@ -16,10 +28,10 @@ public class TestVariablesDemo1 {
 
 		String s5 = new String("Srinu");// 1 Heap + 1 SCP
 		String s6 = "Srinu";// 0 objects
-		
+
 		System.out.println(s5.hashCode());
 		System.out.println(s6.hashCode());
-		
+
 		System.out.println(System.identityHashCode(s5));
 		System.out.println(System.identityHashCode(s6));
 
