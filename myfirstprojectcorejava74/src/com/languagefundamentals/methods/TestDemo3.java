@@ -35,6 +35,9 @@ public class TestDemo3 {
 		System.out.println("Enter a City");
 		sc.nextLine();
 		String city = sc.nextLine();
+		
+		System.out.println("Enter a Gender info ");
+		char c = sc.next().charAt(0);//Male --> Method Chaining 
 
 		// Call by value
 		t.getName(fname, lname);
@@ -42,7 +45,12 @@ public class TestDemo3 {
 		t.getHeight(height);
 		t.getWeight(weight);
 		t.cityInfo(city);
+		t.getGenderInfo(c);
 
+	}
+
+	void getGenderInfo(char c) {
+		System.out.println("Gender info : " + c);
 	}
 
 	void cityInfo(String city) {
