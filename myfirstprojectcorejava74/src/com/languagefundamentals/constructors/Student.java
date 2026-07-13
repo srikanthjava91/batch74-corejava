@@ -19,6 +19,8 @@ public class Student {
 
 	public static void main(String[] args) {
 
+//		When the program, does not contain any constructor then only 
+//		Java compiler will create default constructor..? 
 //		The below Object is Created with the help of default constructor.
 		Student s1 = new Student();
 		s1.show();
