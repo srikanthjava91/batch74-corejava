@@ -5,7 +5,7 @@ package com.operators01;
 public class Student {
 
 	void main() {
-		System.out.println("Welocme to Vcube !!");
+		System.out.println("main method started ");
 
 		int[] marks = { 99, 98, 97, 96, 95, 94 };
 
@@ -15,11 +15,10 @@ public class Student {
 		for (int m : marks) {
 			total_marks = total_marks + m;
 		}
-		avg = total_marks / marks.length;
 
-		System.out.println("Total Marks : " + total_marks);
-		System.out.println("Avg of all the marks : " + avg);
-
+		avg = total_marks/marks.length;
+		
+		System.out.println("Student Total marks : " + total_marks);
+		System.out.println("avg of all mraks : " + avg);
 	}
-
 }
