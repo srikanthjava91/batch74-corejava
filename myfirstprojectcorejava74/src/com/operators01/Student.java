@@ -1,13 +1,13 @@
 package com.operators01;
 
-//WAP to find the total_marks + avg of all the marks of the student..
-//99 98 97 96 95 94 
+//WAP to print total_marks of the student + avg of the student marks.
+//99 98 97 94 45 90
 public class Student {
 
 	void main() {
 		System.out.println("main method started ");
 
-		int[] marks = { 99, 98, 97, 96, 95, 94 };
+		int[] marks = { 99, 98, 97, 94, 45, 90 };
 
 		double total_marks = 0;
 		double avg = 0;
@@ -16,9 +16,11 @@ public class Student {
 			total_marks = total_marks + m;
 		}
 
-		avg = total_marks/marks.length;
-		
-		System.out.println("Student Total marks : " + total_marks);
-		System.out.println("avg of all mraks : " + avg);
+		avg = total_marks / marks.length;
+
+		System.out.println("Total marks : " + total_marks);
+		System.out.println("AVg of al marks : " + avg);
+
 	}
+
 }
