@@ -64,7 +64,7 @@ public class PersonalLoan extends LoanImpl {
 //	And then, If the class contains normal methods, 
 //	then the child abstract class can override normal method to abstract methods.
 
-	public void hello() throws IOException{
+	public void hello() throws IOException {
 		System.out.println("Hello Loan IMPl ");
 	}
 
